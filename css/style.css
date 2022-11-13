@@ -1,0 +1,135 @@
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0;
+    background: url('../images/bg-pattern-top.svg') no-repeat 350% 320%/120% 120%,
+        url('../images/bg-pattern-bottom.svg') no-repeat right 350% bottom 350%/120% 120%;
+    background-color: var(--dark-cyan);
+    font-size: 14px;
+    color: var(--dark-gray);
+}
+
+main {
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+.card {
+    max-width: 350px;
+    padding: 140px 0 2em;
+    border-radius: .8em;
+    background: url('../images/bg-pattern-card.svg') no-repeat top left/100%;
+    background-color: white;
+    text-align: center;
+}
+
+.user-info {
+    position: relative;
+    padding-top: 5em;
+}
+
+.user-photo {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    margin-left: -4em;
+}
+
+.user-photo > img {
+    width: 8em;
+    border: 6px solid white;
+    border-radius: 50%;
+}
+
+.user-name {
+    display: inline-block;
+    margin-right: .4em;
+}
+
+.user-name,
+.stats > .data > .value {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.user-age {
+    display: inline-block;
+    font-size: 1.6em;
+}
+
+.user-addr {
+    margin: 1em 0;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+    padding: 2.4em 3em 0;
+    margin-top: 2.2em;
+    border-top: 1px solid rgba(128, 128, 128, 0.219);
+}
+
+.stats > .data > .value {
+    margin-bottom: .5em;
+    font-size: 1.4em !important;
+}
+
+.stats > .data > .category {
+    font-size: .9em;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* kumbh-sans-regular */
+@font-face {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: regular;
+    src: url('//lib.baomitu.com/fonts/kumbh-sans/kumbh-sans-regular.eot'); /* IE9 Compat Modes */
+    src: local('Kumbh Sans'), local('KumbhSans-Normal'),
+         url('//lib.baomitu.com/fonts/kumbh-sans/kumbh-sans-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('//lib.baomitu.com/fonts/kumbh-sans/kumbh-sans-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('//lib.baomitu.com/fonts/kumbh-sans/kumbh-sans-regular.woff') format('woff'), /* Modern Browsers */
+         url('//lib.baomitu.com/fonts/kumbh-sans/kumbh-sans-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('//lib.baomitu.com/fonts/kumbh-sans/kumbh-sans-regular.svg#KumbhSans') format('svg'); /* Legacy iOS */
+  }
+    
+  /* kumbh-sans-700 */
+  @font-face {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//lib.baomitu.com/fonts/kumbh-sans/kumbh-sans-700.eot'); /* IE9 Compat Modes */
+    src: local('Kumbh Sans'), local('KumbhSans-Normal'),
+         url('//lib.baomitu.com/fonts/kumbh-sans/kumbh-sans-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('//lib.baomitu.com/fonts/kumbh-sans/kumbh-sans-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('//lib.baomitu.com/fonts/kumbh-sans/kumbh-sans-700.woff') format('woff'), /* Modern Browsers */
+         url('//lib.baomitu.com/fonts/kumbh-sans/kumbh-sans-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('//lib.baomitu.com/fonts/kumbh-sans/kumbh-sans-700.svg#KumbhSans') format('svg'); /* Legacy iOS */
+  }
+    
